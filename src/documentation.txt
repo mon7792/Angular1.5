@@ -12,4 +12,9 @@ Command: python -m SimpleHTTPServer
   b. create two file "app.config.js", "app.module.js"
   c. Initialise the app make changes in the file and update appropriate changes in index.html file
   d. Include the JS files in the mail index.HTML
-  
+
+6. Create a Controller
+  a. Create a folder inside app folder.. blog-list
+  b. Inside the blog-list folder create two files "blog-list.component.js", "blog-list.module.js".
+  c. Initialise the app make changes in the file and update appropriate changes in index.html and app.module.js file
+  d. Include the JS files in the mail index.HTML
