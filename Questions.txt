@@ -1,0 +1,2 @@
+1. What is the meaning of name, value field in input tag in html?
+2. what is 'use strict' in app.module.js?

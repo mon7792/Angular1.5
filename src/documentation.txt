@@ -4,3 +4,12 @@ Command: python -m SimpleHTTPServer
 2. Initialize angular
    top html tag
    <html ng-app>
+
+3. Conditional (ng-if)
+4. classes(ng-class)
+5. Create a Angular app.
+  a. Create a app folder inside js
+  b. create two file "app.config.js", "app.module.js"
+  c. Initialise the app make changes in the file and update appropriate changes in index.html file
+  d. Include the JS files in the mail index.HTML
+  
