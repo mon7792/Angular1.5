@@ -5,9 +5,19 @@
     <meta charset="utf-8">
     <title>Try Angular 1.5</title>
     <script type="text/javascript" src="./js/angular.min.js"></script>
+    <style>
+      .new-class{
+        font-size: 72px;
+      }
+      .other-class{
+        font-size: 35px;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Hello, {{ name }}</h1>
+    <!-- Demo of conditional and classes -->
+    <h1 class="new-class" ng-class="{'other-class': name=='Monish'}" >Hello, <span ng-if='name'>{{ name }}</span><span ng-if='!name'>World</span>!</h1>
     <input type='text' ng-model='name'/>
   </body>
 </html>
