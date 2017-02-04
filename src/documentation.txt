@@ -1,0 +1,6 @@
+1. Emulate a simple HTTP server
+Command: python -m SimpleHTTPServer
+
+2. Initialize angular
+   top html tag
+   <html ng-app>
