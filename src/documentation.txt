@@ -26,3 +26,8 @@ component('nameofcomponent', {
   templateUrl:
   controller: function($scope){}
 });
+
+7. TemplateURL in component
+      a. add templateUrl Field in component
+      b. Create a templates folder under src folder
+      c. Create all HTML files under the template folder
