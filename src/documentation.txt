@@ -18,3 +18,11 @@ Command: python -m SimpleHTTPServer
   b. Inside the blog-list folder create two files "blog-list.component.js", "blog-list.module.js".
   c. Initialise the app make changes in the file and update appropriate changes in index.html and app.module.js file
   d. Include the JS files in the mail index.HTML
+
+6. Create a Component
+sample component syntax
+component('nameofcomponent', {
+  template:
+  templateUrl:
+  controller: function($scope){}
+});
