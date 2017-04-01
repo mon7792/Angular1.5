@@ -31,3 +31,17 @@ component('nameofcomponent', {
       a. add templateUrl Field in component
       b. Create a templates folder under src folder
       c. Create all HTML files under the template folder
+
+
+8.Looping in template with Ng-repeat
+ng-repeat is used to loop through the array element.
+Use case:
+
+html:
+<ul>
+  <li ng-repeat="{{ item in items}}"></li>
+</ul>
+
+Controller:
+var blogItems = [{}, {}, {}]
+$scope.items = blogItems;
