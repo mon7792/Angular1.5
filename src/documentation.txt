@@ -33,7 +33,7 @@ component('nameofcomponent', {
       c. Create all HTML files under the template folder
 
 
-8.Looping in template with Ng-repeat
+8. Looping in template with Ng-repeat
 ng-repeat is used to loop through the array element.
 Use case:
 
@@ -45,3 +45,8 @@ html:
 Controller:
 var blogItems = [{}, {}, {}]
 $scope.items = blogItems;
+
+
+9. Webserver for javascript Apps.
+Refer the guide on the Github Page (Coding for Entrepreneur):
+https://github.com/codingforentrepreneurs/Guides/blob/master/all/angular_webserver.md
