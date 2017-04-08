@@ -2,13 +2,16 @@
 <!-- TO Initialize html tag must contain ng-app -->
 <html ng-app='try'>
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <title>Try Angular 1.5</title>
-    <script type="text/javascript" src="./js/angular.min.js"></script>
-    <script type="text/javascript" src="./js/app/app.module.js"></script>
-    <script type="text/javascript" src="./js/app/app.config.js"></script>
-    <script type="text/javascript" src="./js/app/blog-list/blog-list.module.js"></script>
-    <script type="text/javascript" src="./js/app/blog-list/blog-list.component.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+    <script type="text/javascript" src="/js/app/app.module.js"></script>
+    <script type="text/javascript" src="/js/app/app.config.js"></script>
+    <script type="text/javascript" src="/js/app/blog-list/blog-list.module.js"></script>
+    <script type="text/javascript" src="/js/app/blog-list/blog-list.component.js"></script>
     <style>
       .new-class{
         font-size: 72px;
@@ -21,12 +24,11 @@
   </head>
   <body>
     <!-- Demo of conditional and classes -->
-    <h1 class="new-class" ng-class="{'other-class': name=='Monish'}" >Hello, <span ng-if='name'>{{ name }}</span><span ng-if='!name'>World</span>!</h1>
+    <!-- <h1 class="new-class" ng-class="{'other-class': name=='Monish'}" >Hello, <span ng-if='name'>{{ name }}</span><span ng-if='!name'>World</span>!</h1>
     <input type='text' ng-model='name'/>
-
+ -->
 
     <!-- Demo of ng-controller -->
-    <blog-list></blog-list>
-
+    <div ng-view></div>
   </body>
 </html>
