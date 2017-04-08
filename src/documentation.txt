@@ -79,3 +79,11 @@ Using services '$routeParams' to optimise the code
 
      }
   2. Update blog-detail.html
+
+15: HTTP Request in Angular JS $http service
+  1. Create a folder by json and a file posts.json and update the json file
+  2. In Config File.ru add :urls "/json"
+  3. add service $http in controller(blog-detail.component.js)
+  4. $http.get("Location_of_json_file").when(success_method, error_method)
+  5. sucess(response, status, config, statusText)
+  6. Update the success function
