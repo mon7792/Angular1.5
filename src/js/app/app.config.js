@@ -18,11 +18,8 @@
           templateUrl: "/templates/about.html"
         }).
         when("/blog/:id",{
-            template: "<blog-list></blog-list>"
+            template: "<blog-detail></blog-detail>"
         }).
-        // when("/blog/2",{
-        //     template: "<blog-list></blog-list>"
-        // }).
         otherwise({
           template: "Not Found"
         })

@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
     <script type="text/javascript" src="/js/app/app.module.js"></script>
     <script type="text/javascript" src="/js/app/app.config.js"></script>
+
+    <script type="text/javascript" src="/js/app/blog-detail/blog-detail.module.js"></script>
+    <script type="text/javascript" src="/js/app/blog-detail/blog-detail.component.js"></script>
     <script type="text/javascript" src="/js/app/blog-list/blog-list.module.js"></script>
     <script type="text/javascript" src="/js/app/blog-list/blog-list.component.js"></script>
     <style>
@@ -23,11 +26,6 @@
     </style>
   </head>
   <body>
-    <!-- Demo of conditional and classes -->
-    <!-- <h1 class="new-class" ng-class="{'other-class': name=='Monish'}" >Hello, <span ng-if='name'>{{ name }}</span><span ng-if='!name'>World</span>!</h1>
-    <input type='text' ng-model='name'/>
- -->
-
     <!-- Demo of ng-controller -->
     <div ng-view></div>
   </body>
