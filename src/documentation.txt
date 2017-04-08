@@ -72,3 +72,10 @@ Using services '$routeParams' to optimise the code
  2. create and Update two file blog-detail.component.js and blog-details.module.js
  3. Update the app.module.js file
  4.  Make the appropriate changes in index.html(Update JS files)
+
+14: For each loop in angularjs
+  1 angular.forEach(<name_of_array>, function(iterator))
+     {
+
+     }
+  2. Update blog-detail.html
