@@ -8,7 +8,8 @@
       component('blogList', {
           // template: "<div class=''><h1>{{ title }}</h1><button type='button' name='button' ng-click='someClickTest()'>CLICK Me</button></div>",
           templateUrl: '/templates/blog-list.html',
-          controller: function($scope){
+          controller: function($routeParams, $scope){
+            console.log($routeParams.id)
             var blogItems = [
               {title: "Some Title", id: 1, description: "This is a book"},
               {title: "Title", id: 2, description: "This is a book"},
