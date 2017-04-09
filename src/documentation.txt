@@ -87,3 +87,12 @@ Using services '$routeParams' to optimise the code
   4. $http.get("Location_of_json_file").when(success_method, error_method)
   5. sucess(response, status, config, statusText)
   6. Update the success function
+
+16: Angular resources
+  1. Create a app called Core under app folder
+  2. Create a post folder under core.
+  3. create a file post.module.js and post.service.js
+  4. angular.module().factory($resource)
+  5. Update index.html with post.module.js and post.service.js
+  6. Use the service in blog-detail.component.js
+  
