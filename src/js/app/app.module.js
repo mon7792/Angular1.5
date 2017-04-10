@@ -8,5 +8,6 @@
   'ngRoute',
   //  internal
   'blogDetail',
-  'blogList'
+  'blogList',
+  'confirmClick',
  ]);

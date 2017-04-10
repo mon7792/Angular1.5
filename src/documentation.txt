@@ -95,4 +95,10 @@ Using services '$routeParams' to optimise the code
   4. angular.module().factory($resource)
   5. Update index.html with post.module.js and post.service.js
   6. Use the service in blog-detail.component.js
-  
+
+17: Angular custom directive
+  1. Create a utils folder under app
+  2. create a folder confirm-click under the utils folder and two files confirm-click.module.js and confirm-click.directive.js
+  3. Update index.html with above two js files
+  4. Update app.module.js file
+  5. add the directive to template folder
