@@ -102,3 +102,6 @@ Using services '$routeParams' to optimise the code
   3. Update index.html with above two js files
   4. Update app.module.js file
   5. add the directive to template folder
+
+
+18: Use of ngclick

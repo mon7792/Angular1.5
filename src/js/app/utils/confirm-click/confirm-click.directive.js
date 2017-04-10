@@ -8,8 +8,15 @@
                var msg = attr.confirmClick || "Are you sure?";
                var clickAction = attr.confirmedClick;
                element.bind('click', function(event){
+                 event.stopImmediatePropagation();
+                 event.preventDefault();
+
                  if ( window.confirm(msg) ){
-                   console.log("cool")
+                   console.log("COOL");
+                  scope.$eval(clickAction)
+                 }
+                 else {
+                   console.log("cancel")
                  }
                })
               //  console.log(scope)
