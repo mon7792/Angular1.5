@@ -1,2 +1,14 @@
 <h1>{{ post.title }}</h1>
 <p>{{ post.description }}</p>
+
+<h3>Comment</h3>
+<ul>
+  <li ng-repeat="comment in post.comments">{{ comment.text }}</li>
+</ul>
+
+<p style='color:red;' ng-if='reply'>Preview: {{ reply.text }}</p>
+<form ng-submit='addReply()'>
+
+<textarea ng-model='reply.text'></textarea>
+<input type="submit"/>
+</form>

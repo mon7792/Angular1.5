@@ -105,3 +105,9 @@ Using services '$routeParams' to optimise the code
 
 
 18: Use of ngclick
+
+19: Forms and ngSubmit(with the help of comments)
+  1. Update comments in json file
+  2. Update the Html
+  3. ng-submit: takes care of submission of form
+  
