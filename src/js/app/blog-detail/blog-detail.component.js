@@ -20,6 +20,11 @@
                 $scope.post.comments.push($scope.reply)
                 resetReply()
             }
+            $scope.deleteComment = function(comment){
+              $scope.$apply(
+              $scope.post.comments.splice(comment, 1)
+            )
+            }
             function resetReply(){
               $scope.reply = {
                     "id" : $scope.post.comments.length + 1,

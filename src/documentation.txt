@@ -1,4 +1,4 @@
-1. Emulate a simple HTTP server
+-1. Emulate a simple HTTP server
 Command: python -m SimpleHTTPServer
 
 2. Initialize angular
@@ -110,4 +110,7 @@ Using services '$routeParams' to optimise the code
   1. Update comments in json file
   2. Update the Html
   3. ng-submit: takes care of submission of form
-  
+
+20: Delete Comment
+  1. create a function delete comment
+  2. whats the use of $scope. $apply
