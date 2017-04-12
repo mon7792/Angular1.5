@@ -1,15 +1,33 @@
-<h1>{{ post.title }}</h1>
-<p>{{ post.description }}</p>
+<div class="row">
+  <div class="col-sm-offset-2 col-sm-8">
 
-<h3>Comment</h3>
-<ul>
-  <li ng-repeat="comment in post.comments">{{ comment.text }}<a href="#" confirm-click="Do u want to delete? " confirmed-click="deleteComment(comment)">Confirm</a><a href="#" ng-click="deleteComment(comment)">Delete</a>
-  </li>
-</ul>
+    <div class="page-header">
+      <h1>{{ post.title }}</h1>
+    </div>
 
-<p style='color:red;' ng-if='reply'>Preview: {{ reply.text }}</p>
-<form ng-submit='addReply()'>
+    <p>{{ post.description }}</p>
+    <hr/>
+    <h3>Comments</h3>
+    <div class="row">
+      <div class="col-sm-6">
+          <input  class="form-control" type="text" ng-model="query" placeholder="Filter comments" />
+      </div>
+    </div>
 
-<textarea ng-model='reply.text'></textarea>
-<input type="submit"/>
-</form>
+    <ul>
+      <li ng-repeat="comment in post.comments | filter: query">{{ comment.text }}<a href="#" confirm-click="Do u want to delete? " confirmed-click="deleteComment(comment)">Confirm</a><a href="#" ng-click="deleteComment(comment)">Delete</a>
+      </li>
+    </ul>
+
+    <hr/>
+    <p style='color:red;' ng-if='reply'>Preview: {{ reply.text }}</p>
+    <form ng-submit='addReply()'>
+      <div class="row">
+        <div class="col-sm-6">
+            <textarea class="form-control" ng-model='reply.text'></textarea>
+        </div>
+      </div>
+      <input class="btn btn-primary" type="submit"/>
+    </form>
+  </div>
+</div>

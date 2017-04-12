@@ -5,6 +5,8 @@
     <base href="/">
     <meta charset="utf-8">
     <title>Try Angular 1.5</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script type="text/javascript" src="/js/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
@@ -22,7 +24,7 @@
     <script type="text/javascript" src="/js/app/blog-list/blog-list.component.js"></script>
 
     <script type="text/javascript" src="/js/app/utils/confirm-click/confirm-click.module.js"></script>
-    <script type="text/javascript" src="/js/app/utils/confirm-click/confirm-click.directive.js"></script>        
+    <script type="text/javascript" src="/js/app/utils/confirm-click/confirm-click.directive.js"></script>
     <style>
       .new-class{
         font-size: 72px;
@@ -34,7 +36,8 @@
     </style>
   </head>
   <body>
+    <nav class="container"></nav>
     <!-- Demo of ng-controller -->
-    <div ng-view></div>
+    <div  class="container" ng-view></div>
   </body>
 </html>
